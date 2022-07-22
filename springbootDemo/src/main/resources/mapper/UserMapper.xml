@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.yizhifu.springbootdemo.mapper.UserMapper">
+	
+	<!--<resultMap id="InfoResultMap" type="Info">
+		<id	property="id" column="ID"/>
+		<result property="CREATED_BY" jdbcType="VARCHAR" column="CREATED_BY"/>
+		<result property="UPDATED_BY" jdbcType="VARCHAR" column="UPDATED_BY"/>
+		<result property="OUT_TRADE_NO" jdbcType="VARCHAR" column="OUT_TRADE_NO"/>
+		<result property="PLATFORM_TYPE" jdbcType="VARCHAR" column="PLATFORM_TYPE"/>
+		<result property="GOODS_INFO" jdbcType="VARCHAR" column="GOODS_INFO"/>
+		<result property="TRADE_AMT" jdbcType="VARCHAR" column="TRADE_AMT"/>
+		<result property="RESULT_MSG" jdbcType="VARCHAR" column="RESULT_MSG"/>
+	</resultMap>
+
+
+	&lt;!&ndash; public List<Info> selectAll(); &ndash;&gt;
+	&lt;!&ndash;<select id="selectAll" resultType="Info">
+		SELECT `ID`,`CREATED_BY`,`UPDATED_BY`,`OUT_TRADE_NO`,`PLATFORM_TYPE`,`GOODS_INFO`,`TRADE_AMT`,`RESULT_MSG` FROM `t_mall_product_acq_order_202207`
+	</select>&ndash;&gt;
+
+	<select id="selectAll" resultMap="InfoResultMap">
+		/*SELECT `CREATED_BY` FROM `t_mall_product_acq_order_202207`
+		where id = 1*/
+		SELECT `ID`,`CREATED_BY`,`UPDATED_BY`,`OUT_TRADE_NO`,`PLATFORM_TYPE`,`GOODS_INFO`,`TRADE_AMT`,`RESULT_MSG` FROM `t_mall_product_acq_order_202207`
+	</select>-->
+
+	<select id="login" resultType="User">
+		select `id`,`name`,`password` from `Users`
+		where `name`= #{name} and `password` = #{password}
+	</select>
+</mapper>
+  

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/JavaSE/JavaSE.iml" filepath="$PROJECT_DIR$/JavaSE/JavaSE.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaStudy.iml" filepath="$PROJECT_DIR$/JavaStudy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaWeb/JavaWeb.iml" filepath="$PROJECT_DIR$/JavaWeb/JavaWeb.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot/springboot.iml" filepath="$PROJECT_DIR$/springboot/springboot.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springbootDemo/springbootDemo.iml" filepath="$PROJECT_DIR$/springbootDemo/springbootDemo.iml" />
+    </modules>
+  </component>
+</project>
